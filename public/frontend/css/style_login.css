@@ -1,0 +1,112 @@
+html{
+    background-color: rgb(76, 126, 233);
+}
+
+.content{
+    margin-top: 70px;
+}
+
+.img-login{
+    width: 100%;
+}
+
+.content-login{
+    margin-left: 0;
+    background-color: white;
+}
+
+.title-main{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 900;
+}
+
+.form-group{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.form-login{
+    width: 80%;
+    height: 40px;
+    border-radius: 30px;
+    border: 1px solid gray;
+    padding-left: 20px;
+}
+
+.check-remember{
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
+.remember-text{
+    display: inline-block;
+    font-size: 90%;
+}
+
+.button-login{
+    height: 40px;
+    width: 80%;
+    border-radius: 5px;
+    background-color: rgb(76, 126, 233);
+    color: white;
+    border-radius: 30px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+/* rgb(59,89,152) */
+
+.text-fail{
+    color: red;
+}
+
+.hr-login{
+    margin-left: 10%;
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.login-other1, .login-other2{
+    height: 40px;
+    width: 80%;
+    border-radius: 5px;
+    color: white;
+    border-radius: 30px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+.login-group-other{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-other1{
+    background-color: #db3236;
+}
+
+.login-other2{
+    background-color: rgb(59,89,152);
+}
+
+.other-content1, .other-content2{
+    text-align: center;
+    font-size: 90%;
+}
+
+.forget-pass, .create-pass{
+    text-decoration: none;
+    color: rgb(76, 126, 233);
+}
+
+.forget-pass:hover, .forget-pass:active,
+.create-pass:hover, .create-pass:active{
+    text-decoration: underline;
+}
+
+.other-content2{
+    margin-top: 10px;
+    margin-bottom: 50px;
+}

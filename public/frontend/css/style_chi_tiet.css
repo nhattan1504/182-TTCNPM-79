@@ -1,0 +1,196 @@
+/* --------------------- */
+
+
+/* -------DEFAULT SETUP------ */
+
+
+/* ----------------------- */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+/* ....................... */
+
+
+/* .......REUSABLE COMPONENT */
+
+
+/* ........................... */
+
+.button {
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    padding: 15px 30px;
+    width: 80%;
+    margin-left: 0%;
+    display: inline-block;
+    text-align: center;
+    /*Align center*/
+    transition: all 0.3s;
+}
+
+
+/* h1,h2,h3{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+} */
+
+
+/* .................................... */
+
+
+/* ................HEADER.................... */
+
+
+/* ...................................... */
+
+header {
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    /* Background always behind screen although move screen */
+    /* view height: 100vh -> 100% screen */
+}
+
+.button:hover,
+.button:active {
+    background-color: rgb(165, 165, 247);
+}
+
+
+/* ----------INFO-PRODUCT--------- */
+
+.product-picture {
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 10%;
+}
+
+
+/* -------------ORDER-PRODUCT------------- */
+
+.sale-info li {
+    list-style: none;
+    margin-top: 30px;
+    font-size: 100%;
+}
+
+.sale-info .price {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 150%;
+    font-weight: 300;
+}
+
+.sale-info .color select {
+    padding: 5px;
+}
+
+.sale-info .quantity input {
+    height: 30px;
+    width: 70px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.sale-info .button {
+    margin-bottom: 20px;
+}
+
+.icon-contact li {
+    list-style: none;
+    display: inline-block;
+}
+
+.icon-contact li i {
+    font-size: 200%;
+    margin-right: 5px;
+    margin-top: 20px;
+}
+
+
+/* ------------------------------- */
+
+
+/* ---------Collapsible--------- */
+
+
+/* ------------------------------- */
+
+
+/* Style the button that is used to open and close the collapsible content */
+
+.collapsible {
+    background-color: white;
+    color: rgb(121, 5, 5);
+    font-weight: 700;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid gray;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.active,
+.collapsible:hover {
+    color: rgb(121, 5, 5, 0.5);
+}
+
+
+/* Style the collapsible content. Note: hidden by default */
+
+.content {
+    font-size: 100%;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: white;
+    word-wrap: break-word;
+}
+
+.content-all {
+    margin-top: 10px;
+    margin-bottom: -38px;
+    padding-bottom: 150px;
+    padding-top: 80px;
+    background-color: white;
+}
+
+.row1 .background {
+    z-index: -2;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+#myVideo {
+    z-index: -1;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}

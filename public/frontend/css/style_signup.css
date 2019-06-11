@@ -1,0 +1,119 @@
+html{
+    background-color: rgb(76, 126, 233);
+}
+
+.content{
+    margin-top: 70px;
+}
+
+.img-signup{
+    width: 100%;
+}
+
+.content-signup{
+    margin-left: 0;
+    background-color: white;
+}
+
+.title-main{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 900;
+}
+
+.text-fail{
+    color: red;
+}
+
+.form-group{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.form-signup{
+    width: 80%;
+    height: 40px;
+    border-radius: 30px;
+    border: 1px solid gray;
+    padding-left: 20px;
+}
+
+.form-signup-pass{
+    width: 94%;
+    height: 40px;
+    border-radius: 30px;
+    border: 1px solid gray;
+    padding-left: 20px;
+}
+
+.form-group-pass1, .form-group-pass2{
+    margin-top: 20px;
+}
+.form-group-pass1{
+    margin-left: 17%;
+}
+
+.form-group-pass2{
+    margin-right: 2%;
+}
+
+.button-signup{
+    height: 40px;
+    width: 80%;
+    border-radius: 5px;
+    background-color: rgb(76, 126, 233);
+    color: white;
+    border-radius: 30px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+.hr-signup{
+    margin-left: 10%;
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.signup-other1, .signup-other2{
+    height: 40px;
+    width: 80%;
+    border-radius: 5px;
+    color: white;
+    border-radius: 30px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+.signup-group-other{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.signup-other1{
+    background-color: #db3236;
+}
+
+.signup-other2{
+    background-color: rgb(59,89,152);
+}
+
+.other-content1, .other-content2{
+    text-align: center;
+    font-size: 90%;
+}
+
+.forget-pass, .already-have{
+    text-decoration: none;
+    color: rgb(76, 126, 233);
+}
+
+.forget-pass:hover, .forget-pass:active,
+.already-have:hover, .already-have:active{
+    text-decoration: underline;
+}
+
+.other-content2{
+    margin-top: 10px;
+    margin-bottom: 50px;
+}

@@ -1,0 +1,24 @@
+.box-main {
+    margin-top: 100px;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.img-product img {
+    text-decoration: none;
+}
+
+.content-danhmucsp {
+    width: 75%;
+    display: inline-block;
+}
+
+.col {
+    text-align: center;
+    width: 25%;
+    margin: 0px;
+}
