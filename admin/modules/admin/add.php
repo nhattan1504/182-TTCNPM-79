@@ -31,19 +31,19 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     }
      if(postInput('phone')=='')
     {
-        $error['phone']="MOI BAN NHAP GIA TIEN";
+        $error['phone']="Mời bạn nhập số điện thoại";
     }
      if(postInput('password')=='')
     {
-        $error['password']="MOI BAN NHAP NOI DUNG";
+        $error['password']="Bạn vui lòng nhập mật khẩu";
     }
     if(postInput('address')=='')
     {
-        $error['address']="MOI BAN NHAP dia chi";
+        $error['address']="Mời bạn nhập địa chỉ";
     }
     if($data['password']!=MD5(postInput("re_password")))
     {
-         $error['password']="mât khẩu không khớp";
+         $error['password']="Mât khẩu không khớp";
     }
     if(empty($error))
     {
@@ -91,7 +91,8 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
             <div class="form-group">
                 <label for="inputName" class="col-sm-2 control-label">Họ và tên </label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputName" placeholder="Ten san pham" name="name" value="<?php echo $data['name'] ?>">
+                    <input type="text" class="form-control" id="inputName" placeholder="Ten san pham" name="name"
+                        value="<?php echo $data['name'] ?>">
                     <?php
                     if(isset($error['name'])):?>
                     <p class="text-danger"> <?php echo $error['name']?></p>
@@ -101,7 +102,8 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
             <div class="form-group">
                 <label for="inputName" class="col-sm-2 control-label">Email </label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputName" placeholder="00000000" name="email"value="<?php echo $data['email']?>">
+                    <input type="text" class="form-control" id="inputName" placeholder="00000000" name="email"
+                        value="<?php echo $data['email']?>">
                     <?php
                     if(isset($error['email'])):?>
                     <p class="text-danger"> <?php echo $error['email']?> </p>
@@ -111,8 +113,9 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
             <div class="form-group">
                 <label for="inputName" class="col-sm-2 control-label">Phone </label>
                 <div class="col-sm-10">
-                    <input type="number" class="form-control" id="inputName" placeholder="" name="phone" value="<?php echo $data['phone']?>">
-                     <?php
+                    <input type="number" class="form-control" id="inputName" placeholder="" name="phone"
+                        value="<?php echo $data['phone']?>">
+                    <?php
                     if(isset($error['phone'])):?>
                     <p class="text-danger"> <?php echo $error['phone']?> </p>
                     <?php endif ?>
@@ -132,7 +135,8 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
             <div class="form-group">
                 <label for="inputName" class="col-sm-2 control-label">Confirm password </label>
                 <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputName" placeholder="00000000" name="re_password" require="">
+                    <input type="password" class="form-control" id="inputName" placeholder="00000000" name="re_password"
+                        require="">
                     <?php
                     if(isset($error['re_password'])):?>
                     <p class="text-danger"> <?php echo $error['re_password']?> </p>
@@ -142,7 +146,8 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
             <div class="form-group">
                 <label for="inputName" class="col-sm-2 control-label">Address </label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputName" placeholder="00000000" name="address"value="<?php echo $data['address']?>">
+                    <input type="text" class="form-control" id="inputName" placeholder="00000000" name="address"
+                        value="<?php echo $data['address']?>">
                     <?php
                     if(isset($error['address'])):?>
                     <p class="text-danger"> <?php echo $error['address']?> </p>
@@ -153,8 +158,12 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
                 <label for="inputName" class="col-sm-2 control-label">Level </label>
                 <div class="col-sm-10">
                     <select class="form-control" name="level">
-                    <option value="1"  <?php echo isset($data['level'])&& $data['level']==1 ?"selected='selected'":'' ?>>Quản lí</option>
-                    <option value="2" <?php echo isset($data['level'])&& $data['level']==2 ?"selected='selected'":'' ?>>Admin</option>
+                        <option value="1"
+                            <?php echo isset($data['level'])&& $data['level']==1 ?"selected='selected'":'' ?>>Quản lí
+                        </option>
+                        <option value="2"
+                            <?php echo isset($data['level'])&& $data['level']==2 ?"selected='selected'":'' ?>>Admin
+                        </option>
                     </select>
                     <?php
                     if(isset($error['level'])):?>

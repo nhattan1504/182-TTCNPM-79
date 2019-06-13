@@ -24,23 +24,23 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     $error=[];
      if(postInput('name')=='')
     {
-        $error['name']="MOI BAN NHAP DAY DU THONG TIN";
+        $error['name']="Bạn vui lòng không để trống tên sản phẩm";
     }
      if(postInput('category_id')=='')
     {
-        $error['category_id']="MOI BAN CHON TEN DANH MUC";
+        $error['category_id']="Mời bạn chọn tên danh mục";
     }
      if(postInput('price')=='')
     {
-        $error['price']="MOI BAN NHAP GIA TIEN";
+        $error['price']="Vui lòng nhập giá tiền";
     }
      if(postInput('infoPro')=='')
     {
-        $error['infoPro']="MOI BAN NHAP NOI DUNG";
+        $error['infoPro']="Vui lòng nhập thông số kỹ thuật";
     }
     if(postInput('number')=='')
     {
-        $error['number']="MOI BAN NHAP so luong";
+        $error['number']="Số lượng sản phẩm không được để trống";
     }
     if(empty($error))
     {

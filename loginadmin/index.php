@@ -19,7 +19,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     }
     if(postInput('password')=='')
     {
-        $error['password']="MOI BAN NHAP mat khau";
+        $error['password']="Bạn vui lòng nhập mật khẩu";
     }
     
     if(empty($error))

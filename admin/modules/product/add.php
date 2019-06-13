@@ -17,31 +17,31 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     $error=[];
      if(postInput('name')=='')
     {
-        $error['name']="MOI BAN NHAP DAY DU THONG TIN";
+        $error['name']="Bạn vui lòng nhập đầy đủ thông tin sản phẩm";
     }
      if(postInput('category_id')=='')
     {
-        $error['category_id']="MOI BAN CHON TEN DANH MUC";
+        $error['category_id']="Bạn vui lòng chọn tên danh mục";
     }
      if(postInput('price')=='')
     {
-        $error['price']="MOI BAN NHAP GIA TIEN";
+        $error['price']="Gía tiền không được để trống";
     }
     if(postInput('infoPro')=='')
     {
-        $error['infoPro']="MOI BAN NHAP THONG SO KY THUAT";
+        $error['infoPro']="Bạn vui lòng nhập thông số kỹ thuật của sản phẩm";
     }
     if(postInput('category_id')=='')
     {
-        $error['category_id']="MOI BAN NHAP THONG TIN MAY";
+        $error['category_id']="Vui lòng không để trống";
     }
     if(postInput('number')=='')
     {
-        $error['number']="MOI BAN NHAP so luong";
+        $error['number']="Bạn vui lòng nhập số lượng sản phẩm";
     }
     if(!isset($_FILES['thunbar']))
     {
-        $error['thunbar']="Ban vui long chon hinh anh";
+        $error['thunbar']="Hình ảnh sản phẩm không được để trống";
     }
     if(empty($error))
     {
